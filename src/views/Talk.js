@@ -9,11 +9,8 @@ import SquareButton from '../components/SquareButton';
 const Option = styled.section`
   margin: 1em 0;
   display: flex;
-  div:first-of-type {
+  .rounded-container {
     min-width: 215px;
-    background: white;
-    border-radius: ${p => p.theme.borderRadius};
-    border: ${p => p.theme.border};
     h1 {
       text-align: center;
     }
@@ -30,7 +27,7 @@ function Talk({ match }) {
   return (
     <div className="page">
       <Option>
-        <div>
+        <div className="rounded-container">
           <h1>Call</h1>
           <img src={call} />
         </div>
@@ -43,7 +40,7 @@ function Talk({ match }) {
         </div>
       </Option>
       <Option>
-        <div>
+        <div className="rounded-container">
           <h1>Chat</h1>
           <img src={chat} />
         </div>
@@ -59,7 +56,7 @@ function Talk({ match }) {
         </div>
       </Option>
       <Option>
-        <div>
+        <div className="rounded-container">
           <h1>Video</h1>
           <img src={video} />
         </div>

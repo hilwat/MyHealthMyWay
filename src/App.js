@@ -34,12 +34,15 @@ const GlobalStyle = createGlobalStyle`
   h1, h2 {
     color: #2082dc
   }
+  .rounded-container {
+    background: white;
+    border-radius: 5px;
+    border: solid 1px #cad1d8;
+  }
 `;
 
 const theme = {
   primary: '#2082dc',
-  border: 'solid 1px #cad1d8',
-  borderRadius: '5px',
 };
 
 const Background = styled.div`

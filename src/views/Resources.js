@@ -11,9 +11,6 @@ const Intro = styled.p`
 const Search = styled.div`
   padding: 0.5em;
   margin: 2em 0 1em;
-  background: white;
-  border-radius: ${p => p.theme.borderRadius};
-  border: ${p => p.theme.border};
   display: flex;
   align-items: center;
   img {
@@ -23,9 +20,6 @@ const Search = styled.div`
 
 const Map = styled.div`
   margin: 1em 0;
-  background: white;
-  border-radius: ${p => p.theme.borderRadius};
-  border: ${p => p.theme.border};
   overflow: hidden;
   img {
     overflow: hidden;
@@ -34,9 +28,6 @@ const Map = styled.div`
 
 const List = styled.div`
   margin: 1em 0;
-  background: white;
-  border-radius: ${p => p.theme.borderRadius};
-  border: ${p => p.theme.border};
   padding: 1em;
   display: flex;
   align-items: start;
@@ -61,16 +52,16 @@ function Resources() {
       <Intro>
         Ask if your workplace has an Employment Assistance Programs (EAP)
       </Intro>
-      <Search>
+      <Search className="rounded-container">
         <img src={searchIcon} alt="search icon" />
         K7L3P5
       </Search>
-      <Map>
+      <Map className="rounded-container">
         <img src={map} alt="map" />
       </Map>
 
       <h2>Group Support</h2>
-      <List>
+      <List className="rounded-container">
         <img src={pin} alt="pin" />
         <div>
           <p>Depression & Aniexty Support</p>
@@ -79,7 +70,7 @@ function Resources() {
         </div>
       </List>
 
-      <List>
+      <List className="rounded-container">
         <img src={pin} alt="pin" />
         <div>
           <p>Boundary Mangement</p>
