@@ -7,6 +7,7 @@ import distraction from '../images/distraction.svg';
 import coping from '../images/coping.svg';
 import plus from '../images/Plus button MyHealthMyWay.png';
 import { Link } from 'react-router-dom';
+import NavBar from '../components/NavBar';
 
 const List = styled.div`
   display: flex;
@@ -37,46 +38,50 @@ const Option = styled.div`
 
 export default function SelfDirectedTools() {
   return (
-    <div className="page">
-      <h1>Self Directed Tool List</h1>
+    <div>
+      <NavBar />
 
-      <List>
-        <Option className="rounded-container">
-          <Link to="/meditation">
-            <img src={meditation} alt="meditation" />
-            <h1>Meditation</h1>
-          </Link>
-        </Option>
+      <div className="content">
+        <h1>Self Directed Tool List</h1>
 
-        <Option className="rounded-container">
-          <img src={inspire} alt="inspire" />
-          <h1>Inspire</h1>
-        </Option>
+        <List>
+          <Option className="rounded-container">
+            <Link to="/meditation">
+              <img src={meditation} alt="meditation" />
+              <h1>Meditation</h1>
+            </Link>
+          </Option>
 
-        <Option className="rounded-container">
-          <img src={coping} alt="coping" />
-          <h1>Coping</h1>
-        </Option>
+          <Option className="rounded-container">
+            <img src={inspire} alt="inspire" />
+            <h1>Inspire</h1>
+          </Option>
 
-        <Option className="rounded-container">
-          <img src={understanding} alt="understanding" />
-          <h1>Understanding</h1>
-        </Option>
+          <Option className="rounded-container">
+            <img src={coping} alt="coping" />
+            <h1>Coping</h1>
+          </Option>
 
-        <Option className="rounded-container">
-          <img src={distraction} alt="distraction" />
-          <h1>Distraction</h1>
-        </Option>
+          <Option className="rounded-container">
+            <img src={understanding} alt="understanding" />
+            <h1>Understanding</h1>
+          </Option>
 
-        <Option className="rounded-container">
-          <img
-            src={plus}
-            alt="plus"
-            style={{ width: '50px', height: '50px', margin: '40px auto 30px' }}
-          />
-          <h1>& More</h1>
-        </Option>
-      </List>
+          <Option className="rounded-container">
+            <img src={distraction} alt="distraction" />
+            <h1>Distraction</h1>
+          </Option>
+
+          <Option className="rounded-container">
+            <img
+              src={plus}
+              alt="plus"
+              style={{ width: '50px', height: '50px', margin: '40px auto 30px' }}
+            />
+            <h1>& More</h1>
+          </Option>
+        </List>
+      </div>
     </div>
   );
 }

@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Button = styled.button`
-  height: 42px;
   border-radius: 5px;
+  line-height: 1;
   background: transparent;
-  padding: 1em;
+  padding: 0.75em;
   color: #2082dc;
   font-weight: bold;
   border: 1px solid #2082dc;
@@ -16,6 +16,6 @@ const Button = styled.button`
   }
 `;
 
-export default function SquareButton({ text }) {
-  return <Button>{text}</Button>;
+export default function SquareButton({ text, className }) {
+  return <Button className={className}>{text}</Button>;
 }
