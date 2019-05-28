@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import NavBar from './components/NavBar';
 
-import { Onboarding, Resources, Talk, Tools, Chat } from './views';
+import { Onboarding, Resources, Talk, Tools, Chat, Relax } from './views';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -38,6 +38,7 @@ const GlobalStyle = createGlobalStyle`
     background: white;
     border-radius: 5px;
     border: solid 1px #cad1d8;
+    padding: .75rem;
   }
 `;
 

@@ -1,21 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Instructions = styled.div`
-  background: white;
-  border-radius: ${p => p.theme.borderRadius};
-  border: ${p => p.theme.border};
-`;
-
 export default function Relax() {
   return (
     <div className="page">
       <h1>Relax - Box Breathing</h1>
-      <div>---VIDEO--</div>
+      <div>
+        <iframe
+          width="350"
+          height="190"
+          src="https://www.youtube.com/embed/1g5Ol25y9Xs"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+      </div>
 
       <h2>Instructions</h2>
 
-      <Instructions className="rounded-container">
+      <div className="rounded-container">
         <p>
           Box breathing is a simple technique that a person can do anywhere,
           including at a work desk or in a cafe. Before starting, people should sit
@@ -30,7 +33,7 @@ export default function Relax() {
           seconds. Repeat steps 1 to 3 at least three times. Ideally, repeat the
           three steps for 4 minutes, or until calm returns.
         </p>
-      </Instructions>
+      </div>
     </div>
   );
 }
