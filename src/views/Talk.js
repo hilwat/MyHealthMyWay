@@ -1,13 +1,78 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import styled from 'styled-components';
+import call from '../images/undraw_calling_kpbp.svg';
+import chat from '../images/undraw_online_world_mc1t.svg';
+import video from '../images/undraw_video_call_kxyp.svg';
+import SquareButton from '../components/SquareButton';
 
-function Talk({match}) {
-    return (
+const Option = styled.section`
+  margin: 1em 0;
+  display: flex;
+  div:first-of-type {
+    min-width: 215px;
+    background: white;
+    border-radius: ${p => p.theme.borderRadius};
+    border: ${p => p.theme.border};
+    h1 {
+      text-align: center;
+    }
+  }
+  div:last-of-type {
+    padding-left: 1em;
+  }
+  button {
+    width: 100%;
+  }
+`;
+
+function Talk({ match }) {
+  return (
+    <div className="page">
+      <Option>
         <div>
-            <div>I'm the talk-to-someone view!</div>
-            <Link to="/chat">Click here to chat to someone</Link>
+          <h1>Call</h1>
+          <img src={call} />
         </div>
-    )
+        <div>
+          <p>Details:</p>
+          <p>Provincial Mental Crisis Number</p>
+          <p>1-888-234-5678</p>
+          <p>Open 24/7</p>
+          <SquareButton text="Start" />
+        </div>
+      </Option>
+      <Option>
+        <div>
+          <h1>Chat</h1>
+          <img src={chat} />
+        </div>
+        <div>
+          <p>Details:</p>
+          <p>Provincial Mental Crisis Number</p>
+          <p>1-888-234-5678</p>
+          <p>Open 24/7</p>
+
+          <Link to="/chat">
+            <SquareButton text="Start" />
+          </Link>
+        </div>
+      </Option>
+      <Option>
+        <div>
+          <h1>Video</h1>
+          <img src={video} />
+        </div>
+        <div>
+          <p>Details:</p>
+          <p>Provincial Mental Crisis Number</p>
+          <p>1-888-234-5678</p>
+          <p>Open 24/7</p>
+          <SquareButton text="See Options" />
+        </div>
+      </Option>
+    </div>
+  );
 }
 
 export default Talk;
