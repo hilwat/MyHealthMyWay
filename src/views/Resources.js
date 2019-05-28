@@ -16,8 +16,8 @@ const Search = styled.div`
   padding: 0.5em;
   margin: 1em 0;
   background: white;
-  border-radius: 5px;
-  border: solid 1px #cad1d8;
+  border-radius: ${p => p.theme.borderRadius};
+  border: ${p => p.theme.border};
   display: flex;
   align-items: center;
   img {
@@ -28,8 +28,8 @@ const Search = styled.div`
 const Map = styled.div`
   margin: 1em 0;
   background: white;
-  border-radius: 5px;
-  border: solid 1px #cad1d8;
+  border-radius: ${p => p.theme.borderRadius};
+  border: ${p => p.theme.border};
   overflow: hidden;
   img {
     overflow: hidden;
@@ -39,8 +39,8 @@ const Map = styled.div`
 const List = styled.div`
   margin: 1em 0;
   background: white;
-  border-radius: 5px;
-  border: solid 1px #cad1d8;
+  border-radius: ${p => p.theme.borderRadius};
+  border: ${p => p.theme.border};
   padding: 1em;
   display: flex;
   align-items: start;

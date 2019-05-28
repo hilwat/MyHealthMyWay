@@ -35,6 +35,8 @@ const GlobalStyle = createGlobalStyle`
 
 const theme = {
   primary: '#2082dc',
+  border: 'solid 1px #cad1d8',
+  borderRadius: '5x',
 };
 
 const Background = styled.div`
