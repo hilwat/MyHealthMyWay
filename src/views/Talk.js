@@ -13,6 +13,7 @@ const Option = styled.section`
     min-width: 215px;
     h1 {
       text-align: center;
+      margin: 0;
     }
   }
   div:last-of-type {

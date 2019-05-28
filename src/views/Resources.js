@@ -9,7 +9,6 @@ const Intro = styled.p`
 `;
 
 const Search = styled.div`
-  padding: 0.5em;
   margin: 2em 0 1em;
   display: flex;
   align-items: center;
@@ -20,6 +19,7 @@ const Search = styled.div`
 
 const Map = styled.div`
   margin: 1em 0;
+  padding: 0 !important;
   overflow: hidden;
   img {
     overflow: hidden;
