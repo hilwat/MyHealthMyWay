@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import NavBar from './components/NavBar';
@@ -18,13 +18,24 @@ const GlobalStyle = createGlobalStyle`
   body {
     height: 100%;
     line-height: 1.2;    
-    background: #222; 
+    background: #222;   
+    color: #445870;
     margin: 0;
   }
   #root {
     height: 100%
   }
+  .primary {
+    color: #2082dc
+  }
+  h1, h2 {
+    color: #2082dc
+  }
 `;
+
+const theme = {
+  primary: '#2082dc',
+};
 
 const Background = styled.div`
   height: 100%;
@@ -39,25 +50,29 @@ const Background = styled.div`
 const Mockup = styled.div`
   width: 375px;
   height: 667px;
-  background: white;
+  background: #f6f7f9;
+  overflow-y: scroll;
 `;
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <Background>
-        <Router>
-          <Mockup>
-            <NavBar />
-            <Route path="/" exact component={Onboarding} />
-            <Route path="/resources" component={Resources} />
-            <Route path="/talk" component={Talk} />
+
+      <ThemeProvider theme={theme}>
+        <Background>
+          <Router>
+            <Mockup>
+              <NavBar />
+              <Route path="/" exact component={Onboarding} />
+              <Route path="/resources" component={Resources} />
+              <Route path="/talk" component={Talk} />
               <Route path="/chat" component={Chat} />
-            <Route path="/tools" component={Tools} />
-          </Mockup>
-        </Router>
-      </Background>
+              <Route path="/tools" component={Tools} />
+            </Mockup>
+          </Router>
+        </Background>
+      </ThemeProvider>
     </>
   );
 }
