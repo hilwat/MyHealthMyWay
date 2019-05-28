@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+
+import Menu from './Menu';
+
 import logo from '../images/MyHealthMyWay Logo - White.svg';
-import menu from '../images/MyHealthMyWay Menu - White.svg';
 
 const Container = styled.div`
   height: 59px;
@@ -16,7 +18,7 @@ export default function NavBar() {
   return (
     <Container>
       <img src={logo} alt="Logo" />
-      <img src={menu} alt="Menu Icon" />
+      <Menu />
     </Container>
   );
 }

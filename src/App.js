@@ -1,7 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 import NavBar from './components/NavBar';
+
+import { Onboarding, Resources, Talk, Tools, Chat } from './views';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -43,9 +47,16 @@ function App() {
     <>
       <GlobalStyle />
       <Background>
-        <Mockup>
-          <NavBar />
-        </Mockup>
+        <Router>
+          <Mockup>
+            <NavBar />
+            <Route path="/" exact component={Onboarding} />
+            <Route path="/resources" component={Resources} />
+            <Route path="/talk" component={Talk} />
+              <Route path="/chat" component={Chat} />
+            <Route path="/tools" component={Tools} />
+          </Mockup>
+        </Router>
       </Background>
     </>
   );
