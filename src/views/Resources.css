@@ -8,16 +8,26 @@
 	
 }
 
+@font-face {
+  font-family: 'Gilroy-Bold';
+  font-style: normal;
+	font-weight: 400;
+  src: url('../fonts/Gilroy-Bold.ttf'); /* IE9 Compat Modes */
+  src: local('Open Sans'), local('OpenSans'),
+       url('../fonts/Gilroy-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+	
+}
+
 p {
 font-family: "Gilroy-Regular", sans-serif;
 }
 
 h1 {
-	font-family: "Gilroy-Regular", sans-serif;	
+	font-family: "Gilroy-Bold", sans-serif;	
 }
 
 h2 {
-	font-family: "Gilroy-Regular", sans-serif;	
+	font-family: "Gilroy-Bold", sans-serif;	
 }
 
 a {

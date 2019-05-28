@@ -55,7 +55,7 @@ function Resources() {
       </Intro>
       <Search className="rounded-container">
         <img src={searchIcon} alt="search icon" />
-        K7L3P5
+        <a>K7L3P5</a>
       </Search>
       <Map className="rounded-container">
         <img src={map} alt="map" />
