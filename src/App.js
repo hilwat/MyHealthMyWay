@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import NavBar from './components/NavBar';
 
-import { Onboarding, Resources, Talk, Tools } from './views';
+import { Onboarding, Resources, Talk, Tools, Chat } from './views';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -53,6 +53,7 @@ function App() {
             <Route path="/" exact component={Onboarding} />
             <Route path="/resources" component={Resources} />
             <Route path="/talk" component={Talk} />
+              <Route path="/chat" component={Chat} />
             <Route path="/tools" component={Tools} />
           </Mockup>
         </Router>
