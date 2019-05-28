@@ -75,6 +75,7 @@ function App() {
               <NavBar />
               <Route path="/" exact component={Onboarding} />
               <Route path="/resources" component={Resources} />
+              <Route path="/meditation" component={Relax} />
               <Route path="/talk" component={Talk} />
               <Route path="/chat" component={Chat} />
               <Route path="/tools" component={Tools} />
