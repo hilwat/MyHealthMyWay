@@ -1,5 +1,4 @@
 import React from 'react';
-import Title from '../components/Title';
 import styled from 'styled-components';
 import searchIcon from '../images/musica-searcher.svg';
 import map from '../images/MyHealthMyWay - Map Kingston.svg';
@@ -53,7 +52,7 @@ const List = styled.div`
 function Resources() {
   return (
     <div className="page">
-      <Title text="Resources" />
+      <h1>Resources</h1>
       <Intro>
         Telehealth for medical advice- Toll-free:
         <strong className="primary">1-866-797-0000</strong>
