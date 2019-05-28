@@ -9,7 +9,7 @@ import { Onboarding, Resources, Talk, Tools, Chat } from './views';
 
 const GlobalStyle = createGlobalStyle`
   html {
-  box-sizing: border-box;
+    box-sizing: border-box;
     height: 100%;
   }
   *, *:before, *:after {
@@ -28,6 +28,9 @@ const GlobalStyle = createGlobalStyle`
   .primary {
     color: #2082dc
   }
+  .page {
+    padding: 1em;
+  }
   h1, h2 {
     color: #2082dc
   }
@@ -36,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
 const theme = {
   primary: '#2082dc',
   border: 'solid 1px #cad1d8',
-  borderRadius: '5x',
+  borderRadius: '5px',
 };
 
 const Background = styled.div`
@@ -50,7 +53,7 @@ const Background = styled.div`
 `;
 
 const Mockup = styled.div`
-  width: 375px;
+  width: 395px;
   height: 667px;
   background: #f6f7f9;
   overflow-y: scroll;

@@ -5,16 +5,13 @@ import searchIcon from '../images/musica-searcher.svg';
 import map from '../images/MyHealthMyWay - Map Kingston.svg';
 import pin from '../images/MyHealthMyWay - Map Kingston - green flag only.png';
 
-const Container = styled.div`
-  padding: 1em;
-  p {
-    margin: 1em;
-  }
+const Intro = styled.p`
+  margin: 1em;
 `;
 
 const Search = styled.div`
   padding: 0.5em;
-  margin: 1em 0;
+  margin: 2em 0 1em;
   background: white;
   border-radius: ${p => p.theme.borderRadius};
   border: ${p => p.theme.border};
@@ -55,14 +52,16 @@ const List = styled.div`
 
 function Resources() {
   return (
-    <Container>
+    <div className="page">
       <Title text="Resources" />
-      <p>
+      <Intro>
         Telehealth for medical advice- Toll-free:
         <strong className="primary">1-866-797-0000</strong>
-      </p>
+      </Intro>
 
-      <p>Ask if your workplace has an Employment Assistance Programs (EAP)</p>
+      <Intro>
+        Ask if your workplace has an Employment Assistance Programs (EAP)
+      </Intro>
       <Search>
         <img src={searchIcon} alt="search icon" />
         K7L3P5
@@ -88,7 +87,7 @@ function Resources() {
           <p> John Deutsch University Centre</p>
         </div>
       </List>
-    </Container>
+    </div>
   );
 }
 
