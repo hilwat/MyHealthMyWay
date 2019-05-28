@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+
+import Menu from './Menu';
+
 import logo from '../images/MyHealthMyWay Logo - White.svg';
 import menu from '../images/MyHealthMyWay Menu - White.svg';
 
@@ -13,10 +16,14 @@ const Container = styled.div`
 `;
 
 export default function NavBar() {
+  function toggleMenu() {
+    console.log('open menu');
+  }
   return (
     <Container>
       <img src={logo} alt="Logo" />
-      <img src={menu} alt="Menu Icon" />
+      <Menu />
+      {/* <img src={menu} alt="Menu Icon" onClick={toggleMenu} /> */}
     </Container>
   );
 }
