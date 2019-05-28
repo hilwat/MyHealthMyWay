@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import searchIcon from '../images/musica-searcher.svg';
 import map from '../images/MyHealthMyWay - Map Kingston.svg';
 import pin from '../images/MyHealthMyWay - Map Kingston - green flag only.png';
+import './Resources.css';
 
 const Intro = styled.p`
   margin: 1em;
