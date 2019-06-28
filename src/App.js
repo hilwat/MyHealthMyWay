@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-import NavBar from './components/NavBar';
-
 import { Onboarding, Resources, Talk, Tools, Chat, Relax } from './views';
 
 const GlobalStyle = createGlobalStyle`
@@ -28,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
   .primary {
     color: #2082dc
   }
-  .page {
+  .content {
     padding: 1em;
   }
   h1, h2 {
@@ -72,7 +70,6 @@ function App() {
         <Background>
           <Router>
             <Mockup>
-              <NavBar />
               <Route path="/" exact component={Onboarding} />
               <Route path="/resources" component={Resources} />
               <Route path="/meditation" component={Relax} />

@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import Menu from './Menu';
-
+import { Link } from 'react-router-dom';
 import logo from '../images/MyHealthMyWay Logo - White.svg';
 
 const Container = styled.div`
@@ -14,10 +13,16 @@ const Container = styled.div`
   padding: 0 0.5em;
 `;
 
+const Logo = styled.img`
+  margin-top: 11px;
+`;
+
 export default function NavBar() {
   return (
     <Container>
-      <img src={logo} alt="Logo" />
+      <Link to="/">
+        <Logo src={logo} alt="Logo" />
+      </Link>
       <Menu />
     </Container>
   );

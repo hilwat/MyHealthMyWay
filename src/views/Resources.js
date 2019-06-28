@@ -4,6 +4,7 @@ import searchIcon from '../images/musica-searcher.svg';
 import map from '../images/MyHealthMyWay - Map Kingston.svg';
 import pin from '../images/MyHealthMyWay - Map Kingston - green flag only.png';
 import './Resources.css';
+import NavBar from '../components/NavBar';
 
 const Intro = styled.p`
   margin: 1em;
@@ -43,14 +44,15 @@ const List = styled.div`
 
 function Resources() {
   return (
-    <div className="page">
-      <h1>Resources</h1>
-      <Intro>
-        Telehealth for medical advice- Toll-free:
-        <strong className="primary">1-866-797-0000</strong>
-      </Intro>
-
-      <Intro>
+    <div>
+      <NavBar />
+      <div className="content">
+        <h1>Resources</h1>
+        <Intro>
+          Telehealth for medical advice- Toll-free:
+          <strong className="primary">1-866-797-0000</strong>
+        </Intro>
+        <Intro>
         Ask if your workplace has an Employment Assistance Programs (EAP)
       </Intro>
       <Search className="rounded-container">
@@ -60,24 +62,24 @@ function Resources() {
       <Map className="rounded-container">
         <img src={map} alt="map" />
       </Map>
+        <h2>Group Support</h2>
+        <List className="rounded-container">
+          <img src={pin} alt="pin" />
+          <div>
+            <p>Depression & Aniexty Support</p>
+            <p> Every Wednesday 6:30pm</p>
+            <p> Bethel Church - 314 Johnson St</p>{' '}
+          </div>
+        </List>
 
-      <h2>Group Support</h2>
-      <List className="rounded-container">
-        <img src={pin} alt="pin" />
-        <div>
-          <p>Depression & Aniexty Support</p>
-          <p> Every Wednesday 6:30pm</p>
-          <p> Bethel Church - 314 Johnson St</p>{' '}
-        </div>
-      </List>
-
-      <List className="rounded-container">
-        <img src={pin} alt="pin" />
-        <div>
-          <p>Boundary Mangement</p>
-          <p> John Deutsch University Centre</p>
-        </div>
-      </List>
+        <List className="rounded-container">
+          <img src={pin} alt="pin" />
+          <div>
+            <p>Boundary Mangement</p>
+            <p> John Deutsch University Centre</p>
+          </div>
+        </List>
+      </div>
     </div>
   );
 }
