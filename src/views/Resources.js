@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import searchIcon from '../images/musica-searcher.svg';
 import map from '../images/MyHealthMyWay - Map Kingston.svg';
 import pin from '../images/MyHealthMyWay - Map Kingston - green flag only.png';
+import './Resources.css';
 import NavBar from '../components/NavBar';
 
 const Intro = styled.p`
@@ -51,18 +52,16 @@ function Resources() {
           Telehealth for medical advice- Toll-free:
           <strong className="primary">1-866-797-0000</strong>
         </Intro>
-
         <Intro>
-          Ask if your workplace has an Employment Assistance Programs (EAP)
-        </Intro>
-        <Search className="rounded-container">
-          <img src={searchIcon} alt="search icon" />
-          K7L3P5
-        </Search>
-        <Map className="rounded-container">
-          <img src={map} alt="map" />
-        </Map>
-
+        Ask if your workplace has an Employment Assistance Programs (EAP)
+      </Intro>
+      <Search className="rounded-container">
+        <img src={searchIcon} alt="search icon" />
+        <a>K7L3P5</a>
+      </Search>
+      <Map className="rounded-container">
+        <img src={map} alt="map" />
+      </Map>
         <h2>Group Support</h2>
         <List className="rounded-container">
           <img src={pin} alt="pin" />

@@ -1,5 +1,7 @@
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
+import './Menu.css';
+
 
 import menu from '../images/MyHealthMyWay Menu - White.svg';
 
@@ -9,9 +11,10 @@ var styles = {
         position: 'relative',
         right: '6px',
         width: '36px',
-        height: '36px'
+				height: '36px'
     }
 }
+
 
 function MenuComponent() {
     return (

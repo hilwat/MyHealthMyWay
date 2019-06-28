@@ -349,3 +349,17 @@ template {
 [hidden] {
   display: none;
 }
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  font-style: normal;
+	font-weight: 400;
+  src: url('../src/fonts/Gilroy-Regular.ttf'); /* IE9 Compat Modes */
+  src: local('Open Sans'), local('OpenSans'),
+       url('../src/fonts/Gilroy-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+	
+}
+
+a {
+font-family: "Gilroy-Regular", sans-serif;
+}
