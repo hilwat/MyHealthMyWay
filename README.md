@@ -12,4 +12,4 @@ A "first aid" kit for those struggling and their family/friends.
 1. ```npm install```
 2. ```npm start```
 
-Big Shout Out to @corinawong & @trandromeda for their mad skills in turning this around in less than 48hours
+Big Shout Out to @corinawong & @trandromeda for their mad skills in turning this around in less than 48hoursgi
